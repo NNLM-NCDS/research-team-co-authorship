@@ -2,9 +2,9 @@
 Searches in PubMed and retrieves co-authored articles via the Entrez Programming Utilities
 
 # Project Description
-This Python script fetches articles and citations from PubMed via the Entrez Programming Utilities provided by National Libraries of Medicine. It takes a list of authors (csv file) and creates potential queries of co-authorship between authors including variations of author name (e.g., J Smith,  Jacob Smith) and unique author combinations (Jacob Smith and Andrey Smith, Andrey Smith and Henry Williams). Using these search queries, the script calls the PubMed API to perform the search for each query and retrieves the results. The results are downloaded in a csv file. 
+This Python script fetches articles with citation information from PubMed via the Entrez Programming Utilities provided by National Libraries of Medicine. It takes a list of authors (csv file) and creates potential queries of co-authorship between authors including variations of author name (e.g., J Smith,  Jacob Smith) and unique author combinations (Jacob Smith and Andrey Smith, Andrey Smith and Henry Williams). Using these search queries, the script calls the PubMed API to perform the search for each query and retrieves the results. The results are downloaded in a csv file. 
 
-An NCBI key will enable you to issue a higher number of queries per minute to the PubMed APIs. 
+An NCBI key is not required to execute the code. If you have a large number of search queries, utilizing the NCBI key will enable you to issue a larger number of queries per minute to the PubMed APIs. 
 
 # How to Install and Run the Project
 
