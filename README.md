@@ -7,7 +7,11 @@ This Python script fetches articles with citation information from PubMed via th
 An NCBI key is not required to execute the code. If you have a large number of search queries, utilizing the NCBI key will enable you to issue a larger number of queries per minute to the PubMed APIs. 
 
 # How to Install and Run the Project
+Google Colaboratory has an import feature that includes GitHub as an option:
+[https://colab.research.google.com/](https://colab.research.google.com/)
 
+Before we make this public, add a new screenshot showing it as an option in the dropdown menu (Google only allows imports of public repos):
+![Screenshot 2024-04-15 at 9 52 49 AM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/eceda56c-1d8a-44ed-9dba-fe6d49f47a7d)
 
 # How to Use the Project
 
