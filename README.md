@@ -14,7 +14,20 @@ Right after we make this public, add a new screenshot showing it as an option in
 ![Screenshot 2024-04-15 at 9 52 49 AM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/eceda56c-1d8a-44ed-9dba-fe6d49f47a7d)
 
 Alternatively, I think I'd like to make a standalone version of the script that works locally (so people don't have to use Google Colab), and include those instructions here. -Justin
-
+### Running the Project:
+1. **Open the notebook**:
+   - Navigate to the notebook file (`pubmed_coauthorshop_search.ipynb`) in the file explorer.
+   - Double click on the notebook file to open it in Google Colab.
+2. **Upload the CSV file**:
+   - Make sure you have the CSV file (`sample-author-list.csv`) available on your local machine.
+   - In Google Colab, click on the `Files` icon in the left sidebar.
+   - Click on `Upload` and select the CSV file (`filename.csv`) from your local machine.
+3. **Connect to a runtime**:
+   - Click on `Runtime` > `Change runtime type`.
+   - Select `GPU` as the hardware accelerator (optional, if your project requires GPU).
+4. **Run the cells**:
+   - Click on `Runtime` > `Run all`.
+   - Follow the prompts in the notebook, if any.
 # How to Use the Project
 
 
