@@ -35,6 +35,7 @@ Alternatively, I think I'd like to make a standalone version of the script that 
 
 
 # License
+This project utilizes the **MIT License**, a permissive software license with few restrictions of reuse. You can do whatever you want as long as you include the original copyright and copy of the license notice in any copies or derivations of this software project. You can use, copy, modify, merge, publish, distribute, sublicense, and sell copies of this software. Read the **MIT license** for additional information: https://github.com/NNLM-NCDS/research-team-co-authorship?tab=MIT-1-ov-file.
 
 # Credit 
 
