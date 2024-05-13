@@ -39,32 +39,17 @@ This project utilizes the **MIT License**, a permissive software license with fe
 
 # Credit 
 
-### Copied members and roles from an early project team doc. Who wants to be listed? How to order the  names - alphabetical or order of effort? Do we want to assign roles? Hhow do folks want their names to appear. Should we credit the class too?
+The NNLM National Center for Data Services (NCDS) held a class, the Fundamentals of Health Data Science(Fall 2023), that brought together the following professionals interested in working on Python projects to solve information challenges in our workplace: 
 
-The NNLM Foundations of Health Data Science course (Fall 2023) brought together the following professionals interested in working on Python projects to solve information challenges in our workplace: 
-
-Project Leaders
-Python Engineers
-Python R&D
-Secretaries
-Archivists
-Other Support
-
-Mego Franks
-Katy Smith
-Breck Turner
-Angeleen Neely-Sardon
-David Farris
-Ahlam Saleh
-Kathryn Mlsna
-Beth Blackwood
-Sunny Chung
-Cheryl A. Thompson
-Brett Porter
-Aida Smith
-Lisa Connor
-Linda Hartman
-
+Project management: Justin de la Cruz, Beth Blackwood
+ 
+Code development: Brett Porter, Justin de la Cruz
+ 
+GitHub documentation: Cheryl Thompson, Brett Porter, Justin de la Cruz, Beth Blackwood
+ 
+Administrative support: Katy Smith, Sunny Chung
+ 
+Additional thanks to: Angeleen Neely-Sardon, David Farris, Linda Hartman, Lisa Connor, Mego Franks, Ahlam Saleh, Breck Turner, Kathryn Mlsna, and Doug Dechow
 
 # How to Contribute to the Project
 
