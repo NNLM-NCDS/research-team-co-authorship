@@ -41,15 +41,15 @@ This project utilizes the **MIT License**, a permissive software license with fe
 
 The NNLM National Center for Data Services (NCDS) held a class, the Fundamentals of Health Data Science(Fall 2023), that brought together the following professionals interested in working on Python projects to solve information challenges in our workplace: 
 
-Project management: Justin de la Cruz, Beth Blackwood
+**Project management:** Justin de la Cruz, Beth Blackwood
  
-Code development: Brett Porter, Justin de la Cruz
+**Code development:** Brett Porter, Justin de la Cruz
  
-GitHub documentation: Cheryl Thompson, Brett Porter, Justin de la Cruz, Beth Blackwood
+**GitHub documentation:** Cheryl Thompson, Brett Porter, Justin de la Cruz, Beth Blackwood
  
-Administrative support: Katy Smith, Sunny Chung
+**Administrative support:** Katy Smith, Sunny Chung
  
-Additional thanks to: Angeleen Neely-Sardon, David Farris, Linda Hartman, Lisa Connor, Mego Franks, Ahlam Saleh, Breck Turner, Kathryn Mlsna, and Doug Dechow
+**Additional thanks to:** Angeleen Neely-Sardon, David Farris, Linda Hartman, Lisa Connor, Mego Franks, Ahlam Saleh, Breck Turner, Kathryn Mlsna, and Doug Dechow
 
 # How to Contribute to the Project
 
