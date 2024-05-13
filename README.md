@@ -10,10 +10,8 @@ An NCBI key is not required to execute the code. If you have a large number of s
 Google Colaboratory has an import feature that includes GitHub as an option:
 [https://colab.research.google.com/](https://colab.research.google.com/)
 
-Right after we make this public, add a new screenshot showing it as an option in the dropdown menu (Google only allows imports of public repos):
 ![Screenshot 2024-04-15 at 9 52 49 AM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/eceda56c-1d8a-44ed-9dba-fe6d49f47a7d)
 
-Alternatively, I think I'd like to make a standalone version of the script that works locally (so people don't have to use Google Colab), and include those instructions here. -Justin
 ### Running the Project:
 1. **Open the notebook**:
    - Navigate to the notebook file (`pubmed_coauthorshop_search.ipynb`) in the file explorer.
