@@ -33,6 +33,13 @@ Then choose the *pubmed_coauthorship_search.ipynb* to get started.
 
 
 # Examples with sample data
+This script takes as input a CSV file with the following column names:
+* **FirstName** -  The first name of the author.
+* **MI** - The middle initial of the author, if used/available.
+* **LastName** - The last name of the author.
+* **Publishes As** - Other known names the author has published under, in full, including maiden names, aliases, and suffixes (Jr, Sr, III, etc.). You can include multiple "Publishes As" names, separated by semicolons (;).
+* **OrcID** - The author's OrcID, if available (note the capitalization used here).
+![Screenshot 2024-05-13 at 2 40 06 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/62294f5a-55bb-4560-bcea-df241385766b)
 
 
 # License
