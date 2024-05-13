@@ -10,7 +10,11 @@ An NCBI key is not required to execute the code. If you have a large number of s
 Google Colaboratory has an import feature that includes GitHub as an option:
 [https://colab.research.google.com/](https://colab.research.google.com/)
 
-![Screenshot 2024-04-15 at 9 52 49 AM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/eceda56c-1d8a-44ed-9dba-fe6d49f47a7d)
+When you visit that URL, you should see a prompt to open or connect or upload a notebook. Use the GitHub tab, and paste the URL of this GitHub repository to import the code notebook: https://github.com/NNLM-NCDS/research-team-co-authorship/
+
+![Screenshot 2024-05-13 at 2 30 35 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/12acd701-f2f8-42e4-9acb-bb7472d31251)
+
+Then choose the *pubmed_coauthorship_search.ipynb* to get started.
 
 ### Running the Project:
 1. **Open the notebook**:
