@@ -30,17 +30,30 @@ Then choose the *pubmed_coauthorship_search.ipynb* to get started.
    - Click on `Runtime` > `Run all`.
    - Follow the prompts in the notebook, if any.
 # How to Use the Project
+The script uses the [metapub](https://github.com/metapub/metapub) Python library and the Entrez module from the [Bio](https://biopython.org/docs/1.75/api/Bio.Entrez.html) python library. These are not typically available on Google Colaboratory, so the script includes an installation of them on your runtime instance.
 
+To run this code, you will need to do the following in Google Colab, with the notebook open:
+1. Ensure that your input data CSV file is correctly formatted (see "Example with sample data" below).
+2. Save your input CSV data file in your Google Drive.
+3. Mount your Google Drive to connect your input CSV file. (This step is included in the code and will prompt a pop-up box that will walk you through the process.)
+4. Change the file path inside the quotes in this line of code to the location of your CSV in your Google Drive: df = pd.read_csv('**/content/drive/MyDrive/path-to-your-file.csv**', skipinitialspace=True)
+5. Run all cells in the code: Click on `Runtime` > `Run all`.
+6. The output file will be saved as 'article_info.cvs' in your Google Colab space.
+7. Download this file to your computer. 
 
-# Examples with sample data
+# Example with sample data
 This script takes as input a CSV file with the following column names:
 * **FirstName** -  The first name of the author.
 * **MI** - The middle initial of the author, if used/available.
 * **LastName** - The last name of the author.
 * **Publishes As** - Other known names the author has published under, in full, including maiden names, aliases, and suffixes (Jr, Sr, III, etc.). You can include multiple "Publishes As" names, separated by semicolons (;).
 * **OrcID** - The author's OrcID, if available (note the capitalization used here).
+
+This is [our sample CSV file](https://github.com/NNLM-NCDS/research-team-co-authorship/blob/main/sample-author-list.csv) following the correct format:
+
 ![Screenshot 2024-05-13 at 2 40 06 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/62294f5a-55bb-4560-bcea-df241385766b)
 
+The output of the code with this sample file is available on this repo at: https://github.com/NNLM-NCDS/research-team-co-authorship/blob/main/article_info.csv
 
 # License
 This project utilizes the **MIT License**, a permissive software license with few restrictions of reuse. You can do whatever you want as long as you *include 1) the original copyright and 2) copy of the license notice* in any copies or derivations of this software project. You can *use, copy, modify, merge, publish, distribute, sublicense, and sell copies* of this software. Read the **MIT license** for additional information: https://github.com/NNLM-NCDS/research-team-co-authorship?tab=MIT-1-ov-file.
