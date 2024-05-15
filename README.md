@@ -19,19 +19,21 @@ The script uses the [metapub](https://github.com/metapub/metapub) Python library
 
 **First, open the notebook:** If you followed the steps above, you should now have the code notebook open in Google Colaboratory. Otherwise, search for or navigate to the notebook file (`pubmed_coauthorshop_search.ipynb`) in your Google Colaboratory files: https://colab.research.google.com/. Then double click on the notebook file to open it in Google Colab.
 
-**Second, upload your CSV input data file:** See the "Example with sample data" section below to note how to format your CSV input data file. We recommend uploading your CSV file to your Google Drive, since our code mounts your Google Drive folders to interact with them. If you take this approach, you will need to first upload your file, then change one line of code in the script to point to your file. Change the file path inside the quotes in this line of code to the location of your CSV in your Google Drive: `df = pd.read_csv('/content/drive/MyDrive/path-to-your-file.csv', skipinitialspace=True)`
+**Second, upload your CSV input data file:** See the "Example with sample data" section below to note how to format your CSV input data file. We recommend uploading your CSV file to your Google Drive, since our code mounts your Google Drive folders to interact with them. If you take this approach, you will need to first upload your file, then change one line of code in the script to point to your file. 
 
-The default storage path to reach Google Drive from Google Colab is `'/content/drive/MyDrive/'` which points to your home directory in Google Drive. If you happen to have your data-input.csv file in a folder named Data in your home directory, then your new path for the code would be `'/content/drive/MyDrive/Data/data-input.csv'`
+Change the file path inside the quotes in this line of code to the location of your CSV in your Google Drive: `df = pd.read_csv('/content/drive/MyDrive/path-to-your-file.csv', skipinitialspace=True)`
+
+The default storage path to reach Google Drive from Google Colab is `'/content/drive/MyDrive/'` which points to your home directory in Google Drive. So, for example, if you happen to have your data-input.csv file in a folder named Data in your home directory, then your new path for the code would be `'/content/drive/MyDrive/Data/data-input.csv'`
 
 Alternatively, you can upload your CSV file to your temporary runtime storage space. This is not recommended since all files in your temporary space will be deleted when you close Google Colab. But to do this, you can click on the `Files` icon in the left sidebar, and then click on `Upload` and select the CSV file (`filename.csv`) from your local machine. (See screenshot below.)
   
 ![Screenshot 2024-05-15 at 4 03 01 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/32874d44-ecbe-467c-b828-31cd4b987173)
 
-After it is uploaded, hover on your file in the sidebar and use the three dots menu next to it to "Copy path" on your file, then insert that path into the code.
+After it is uploaded, hover on your file in the sidebar and use the three dots menu next to it to "Copy path" on your file, then insert that path into the code line referenced above.
 
 **Third, run all cells in the notebook:** Run all cells in the code by clicking on the `Runtime` menu and then `Run all`. The script will run and prompt you to connect to your Google Drive.
 
-The output file will be saved as 'article_info.csv' in your Google Colab space, and the last line of code will download the file to your machine. 
+The output file will be saved as 'article_info.csv' in your Google Colab space, and the last line of code will download the file to your machine. The code will also print out the Boolean search string used for your query; if needed, you can copy that information from the output of the `print(result)` line of code. (It may be good to see how the query came out, or to save it for future reference. That query can be used directly in the PubMed web searching interface to get the same results that the code provides.)
 
 # Example with sample data
 This script takes as input a CSV file with the following column names:
