@@ -12,7 +12,7 @@ When you visit that URL, you should see a prompt to open or connect or upload a 
 
 ![Screenshot 2024-05-13 at 2 30 35 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/12acd701-f2f8-42e4-9acb-bb7472d31251)
 
-Then choose the *pubmed_coauthorship_search.ipynb* to get started.
+Then choose the *pubmed_coauthorship_search.ipynb* file to get started.
 
 # How to Use the Project
 The script uses the [metapub](https://github.com/metapub/metapub) Python library and the Entrez module from the [Bio](https://biopython.org/docs/1.75/api/Bio.Entrez.html) python library. These are not typically available on Google Colaboratory, so the script includes an installation of them on your runtime instance.
