@@ -23,6 +23,7 @@ Then choose the *pubmed_coauthorship_search.ipynb* to get started.
    - This code requires an input CSV file to work. See below for an example on how to structure your file. Make sure you have your CSV file available on your local machine. (Or you can use our [sample CSV file](https://github.com/NNLM-NCDS/research-team-co-authorship/blob/main/sample-author-list.csv) to test the script.) 
    - In Google Colab, click on the `Files` icon in the left sidebar.
    - Click on `Upload` and select the CSV file (`filename.csv`) from your local machine.
+![Screenshot 2024-05-15 at 4 03 01 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/32874d44-ecbe-467c-b828-31cd4b987173)
 3. **Connect to a runtime**:
    - Click on `Runtime` > `Change runtime type`.
    - Select `GPU` as the hardware accelerator (optional, if your project requires GPU).
