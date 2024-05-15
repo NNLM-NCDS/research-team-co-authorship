@@ -16,30 +16,24 @@ When you visit that URL, you should see a prompt to open or connect or upload a 
 
 Then choose the *pubmed_coauthorship_search.ipynb* to get started.
 
-### Running the Project:
-1. **Open the notebook**:
-   - If you followed the steps above, you should now have the code notebook open in Google Colaboratory. Otherwise, search for or navigate to the notebook file (`pubmed_coauthorshop_search.ipynb`) in your Google Colaboratory files: https://colab.research.google.com/. Then double click on the notebook file to open it in Google Colab.
-2. **Upload the CSV file**:
-   - This code requires an input CSV file to work. See below for an example on how to structure your file. Make sure you have your CSV file available on your local machine. (Or you can use our [sample CSV file](https://github.com/NNLM-NCDS/research-team-co-authorship/blob/main/sample-author-list.csv) to test the script.) 
-   - In Google Colab, click on the `Files` icon in the left sidebar.
-   - Click on `Upload` and select the CSV file (`filename.csv`) from your local machine. (See screenshot below.)
-  
-![Screenshot 2024-05-15 at 4 03 01 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/32874d44-ecbe-467c-b828-31cd4b987173)
-
-3. **Run the cells**:
-   - Click on `Runtime` > `Run all`.
-
 # How to Use the Project
 The script uses the [metapub](https://github.com/metapub/metapub) Python library and the Entrez module from the [Bio](https://biopython.org/docs/1.75/api/Bio.Entrez.html) python library. These are not typically available on Google Colaboratory, so the script includes an installation of them on your runtime instance.
 
-To run this code, you will need to do the following in Google Colab, with the notebook open:
-1. Ensure that your input data CSV file is correctly formatted (see "Example with sample data" below).
-2. Save your input CSV data file in your Google Drive.
-3. Mount your Google Drive to connect your input CSV file. (This step is included in the code and will prompt a pop-up box that will walk you through the process.)
-4. Change the file path inside the quotes in this line of code to the location of your CSV in your Google Drive: df = pd.read_csv('**/content/drive/MyDrive/path-to-your-file.csv**', skipinitialspace=True)
-5. Run all cells in the code: Click on `Runtime` > `Run all`.
-6. The output file will be saved as 'article_info.cvs' in your Google Colab space.
-7. Download this file to your computer. 
+**First, open the notebook:** If you followed the steps above, you should now have the code notebook open in Google Colaboratory. Otherwise, search for or navigate to the notebook file (`pubmed_coauthorshop_search.ipynb`) in your Google Colaboratory files: https://colab.research.google.com/. Then double click on the notebook file to open it in Google Colab.
+
+**Second, upload your CSV input data file:** See the "Example with sample data" section below to note how to format your CSV input data file. We recommend uploading your CSV file to your Google Drive, since our code mounts your Google Drive folders to interact with them. If you take this approach, you will need to first upload your file, then change one line of code in the script to point to your file. Change the file path inside the quotes in this line of code to the location of your CSV in your Google Drive: `df = pd.read_csv('/content/drive/MyDrive/path-to-your-file.csv', skipinitialspace=True)`
+
+The default storage path to reach Google Drive from Google Colab is `'/content/drive/MyDrive/'` which points to your home directory in Google Drive. If you happen to have your data-input.csv file in a folder named Data in your home directory, then your new path for the code would be `'/content/drive/MyDrive/Data/data-input.csv'`
+
+Alternatively, you can upload your CSV file to your temporary runtime storage space. This is not recommended since all files in your temporary space will be deleted when you close Google Colab. But to do this, you can click on the `Files` icon in the left sidebar, and then click on `Upload` and select the CSV file (`filename.csv`) from your local machine. (See screenshot below.)
+  
+![Screenshot 2024-05-15 at 4 03 01 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/32874d44-ecbe-467c-b828-31cd4b987173)
+
+After it is uploaded, hover on your file in the sidebar and use the three dots menu next to it to "Copy path" on your file, then insert that path into the code.
+
+**Third, run all cells in the notebook:** Run all cells in the code by clicking on the `Runtime` menu and then `Run all`. The script will run and prompt you to connect to your Google Drive.
+
+The output file will be saved as 'article_info.csv' in your Google Colab space, and the last line of code will download the file to your machine. 
 
 # Example with sample data
 This script takes as input a CSV file with the following column names:
@@ -58,9 +52,13 @@ The output of the code with this sample file is available on this repo at: https
 # License
 This project utilizes the **MIT License**, a permissive software license with few restrictions of reuse. You can do whatever you want as long as you *include 1) the original copyright and 2) copy of the license notice* in any copies or derivations of this software project. You can *use, copy, modify, merge, publish, distribute, sublicense, and sell copies* of this software. Read the **MIT license** for additional information: https://github.com/NNLM-NCDS/research-team-co-authorship?tab=MIT-1-ov-file.
 
-# Credit 
+# Credits
 
-The NNLM National Center for Data Services (NCDS) held a class, the Fundamentals of Health Data Science(Fall 2023), that brought together the following professionals interested in working on Python projects to solve information challenges in our workplace: 
+This script was inspired by, and borrowed heavily from, https://github.com/erilu/pubmed-abstract-compiler
+
+This work was made possible through the Network of the National Library of Medicine's National Center for Data Services, has been funded with Federal funds from the National Library of Medicine, National Institutes of Health, and Department of Health and Human Services, under Cooperative Agreement Number UG4LM012347 with NYU Langone Health. The content is solely the responsibility of the authors and does not necessarily represent the official views of NIH.
+
+The NNLM National Center for Data Services held a class, the Fundamentals of Health Data Science (Fall 2023), that brought together the following project contributers who were interested in working on Python projects to solve information challenges in our workplace: 
 
 **Project management:** Justin de la Cruz, Beth Blackwood
  
@@ -70,8 +68,18 @@ The NNLM National Center for Data Services (NCDS) held a class, the Fundamentals
  
 **Administrative support:** Katy Smith, Sunny Chung
  
-**Additional thanks to:** Angeleen Neely-Sardon, David Farris, Linda Hartman, Lisa Connor, Mego Franks, Ahlam Saleh, Breck Turner, Kathryn Mlsna, and Doug Dechow
+**Additional thanks to:** Joshua Kearney (for the Boolean structure), Angeleen Neely-Sardon, David Farris, Linda Hartman, Lisa Connor, Mego Franks, Ahlam Saleh, Breck Turner, Kathryn Mlsna, and Doug Dechow
 
 # How to Contribute to the Project
+This script is narrow in scope: it works on finding co-authored publications in PubMed for a list of author names and retrieving those citations in a CSV format. Due to limitations on the number of characters that can be used in URLs and in PubMed searching, this script may break with more than 19 authors, or even with authors who have multiple aliases. (It broke in testing when we had too many search facets, which is partially why we omitted author institutional affiliation from the search.) You could contribute to this project by finding a way to restructure the code to work around that limitation.
+
+This script works with the E-Utilities [eSummary](https://www.ncbi.nlm.nih.gov/books/NBK25499/#_chapter4_ESummary_) data, which is sometimes incomplete or missing. You could restructure this code to work with the E-Utilities [eFetch](https://www.ncbi.nlm.nih.gov/books/NBK25499/#_chapter4_EFetch_) data, which is more robust (it includes abstracts, for example).
+
+This script retrieves all results in one batch. You could restructure to assist with anyone needing to retrieve very large batches of citations by implementing time-delayed requests.
 
 # Extra pointers/notes/comments
+* This code requires an input CSV file of author names to work. If you don't have one, or don't know how to format it, you can use our [sample CSV file](https://github.com/NNLM-NCDS/research-team-co-authorship/blob/main/sample-author-list.csv) for reference and to test the script.
+* You should only list one value in each cell of your data input file (FirstName, MI, etc.) *except* the Publishes As column, which can take multiple values, separated by semicolons.
+* This script draws from the eSummary information provided by MEDLINE PlUS / PubMed. It may be incomplete or missing for some of your results. If it is, you should still be able to find the PubMed ID in your output file, and search for that PMID via [PubMed](https://pubmed.ncbi.nlm.nih.gov/) directly to retrieve the info you need.
+* You can manually inspect the eSummary XML file information on a given PMID by using the following URL construction: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=11850928 (and you can view multiple PMIDs at a time by adding a comma after the URL and adding your PMIDs to the URL, example: [...?db=pubmed&id=11850928,11482001](https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=11850928)
+* Simiarly, you can inspect the eFetch XML file information on a PMID by switching "esummary" to "efetch" in that same URL construction: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11850928
