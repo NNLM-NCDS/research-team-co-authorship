@@ -5,7 +5,7 @@ Searches in PubMed and retrieves co-authored articles via the Entrez Programming
 This Python script searches PubMed for co-authored articles and fetches those citations via the Entrez Programming Utilities (E-Utilities) API provided by National Library of Medicine. The script takes a list of author names (in a CSV file) and creates queries of co-authorship between authors of that list, including variations of author name (e.g., J Smith,  Jacob Smith) and unique author combinations (e.g., Jacob Smith AND Andrey Smith, Andrey Smith AND Henry Williams). Using the list of author names as an input, the script develops one Boolean search string (representing all of the possible author combinations) that it then feeds to E-Utilities to perform the search and to retrieve the results. The results are provided in a CSV file containing article citations that include any articles in PubMed that were co-authored by at least two authors on the input list. 
 
 # How to Install and Run the Project
-Google Colaboratory has an import feature that includes GitHub as an option:
+The script is shared here as a Python Notebook file (.ipynb) that is optimized for use in Google Colaboratory (but can also be used in Jupyter Notebook). Google Colab has an import feature that includes GitHub as an option:
 [https://colab.research.google.com/](https://colab.research.google.com/)
 
 When you visit that URL, you should see a prompt to open or connect or upload a notebook. Use the GitHub tab, and paste the URL of this GitHub repository to import the code notebook: https://github.com/NNLM-NCDS/research-team-co-authorship/
