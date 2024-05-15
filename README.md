@@ -20,7 +20,7 @@ Then choose the *pubmed_coauthorship_search.ipynb* to get started.
 1. **Open the notebook**:
    - If you followed the steps above, you should now have the code notebook open in Google Colaboratory. Otherwise, search for or navigate to the notebook file (`pubmed_coauthorshop_search.ipynb`) in your Google Colaboratory files: https://colab.research.google.com/. Then double click on the notebook file to open it in Google Colab.
 2. **Upload the CSV file**:
-   - This code requires an input CSV file to work. See below for an example on how to structure your file. Make sure you have your CSV file or our [sample CSV file](https://github.com/NNLM-NCDS/research-team-co-authorship/blob/main/sample-author-list.csv) available on your local machine.
+   - This code requires an input CSV file to work. See below for an example on how to structure your file. Make sure you have your CSV file available on your local machine. (Or you can use our [sample CSV file](https://github.com/NNLM-NCDS/research-team-co-authorship/blob/main/sample-author-list.csv) to test the script.) 
    - In Google Colab, click on the `Files` icon in the left sidebar.
    - Click on `Upload` and select the CSV file (`filename.csv`) from your local machine.
 3. **Connect to a runtime**:
