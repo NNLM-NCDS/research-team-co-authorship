@@ -26,12 +26,8 @@ Then choose the *pubmed_coauthorship_search.ipynb* to get started.
   
 ![Screenshot 2024-05-15 at 4 03 01 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/32874d44-ecbe-467c-b828-31cd4b987173)
 
-3. **Connect to a runtime**:
-   - Click on `Runtime` > `Change runtime type`.
-   - Select `GPU` as the hardware accelerator (optional, if your project requires GPU).
-4. **Run the cells**:
+3. **Run the cells**:
    - Click on `Runtime` > `Run all`.
-   - Follow the prompts in the notebook, if any.
 
 # How to Use the Project
 The script uses the [metapub](https://github.com/metapub/metapub) Python library and the Entrez module from the [Bio](https://biopython.org/docs/1.75/api/Bio.Entrez.html) python library. These are not typically available on Google Colaboratory, so the script includes an installation of them on your runtime instance.
