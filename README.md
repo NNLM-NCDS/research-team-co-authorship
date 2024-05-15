@@ -31,6 +31,7 @@ Then choose the *pubmed_coauthorship_search.ipynb* to get started.
    - Follow the prompts in the notebook, if any.
   
 *Screenshot for Step 2:*
+
 ![Screenshot 2024-05-15 at 4 03 01 PM](https://github.com/NNLM-NCDS/research-team-co-authorship/assets/23493464/32874d44-ecbe-467c-b828-31cd4b987173)
 
 # How to Use the Project
