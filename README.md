@@ -33,7 +33,9 @@ After it is uploaded, hover on your file in the sidebar and use the three dots m
 
 **Third, run all cells in the notebook:** Run all cells in the code by clicking on the `Runtime` menu and then `Run all`. The script will run and prompt you to connect to your Google Drive.
 
-The output file will be saved as 'article_info.csv' in your Google Colab space, and the last line of code will download the file to your machine. The code will also print out the Boolean search string used for your query; if needed, you can copy that information from the output of the `print(result)` line of code. (It may be good to see how the query came out, or to save it for future reference. That query can be used directly in the PubMed web searching interface to get the same results that the code provides.)
+The output file will be saved as 'article_info.csv' in your Google Colab space, and the last line of code will download the file to your machine. 
+
+The code will also print out the Boolean search string used for your query; if needed, you can copy that information from the output of the `print(result)` line of code. (It may be good to see how the query came out, or to save it for future reference. That query can be used directly in the PubMed web searching interface to get the same results that the code provides.)
 
 # Example with sample data
 This script takes as input a CSV file with the following column names:
