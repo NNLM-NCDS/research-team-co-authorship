@@ -71,6 +71,8 @@ The NNLM National Center for Data Services held a class, the Fundamentals of Hea
 **Additional thanks to:** Joshua Kearney (for the Boolean structure), Angeleen Neely-Sardon, David Farris, Linda Hartman, Lisa Connor, Mego Franks, Ahlam Saleh, Breck Turner, Kathryn Mlsna, and Doug Dechow
 
 # How to Contribute to the Project
+You can create and share a version of this script that doesn't require Google Colab (so folks can run it locally on their computers).
+
 This script is narrow in scope: it works on finding co-authored publications in PubMed for a list of author names and retrieving those citations in a CSV format. Due to limitations on the number of characters that can be used in URLs and in PubMed searching, this script may break with more than 19 authors, or even with authors who have multiple aliases. (It broke in testing when we had too many search facets, which is partially why we omitted author institutional affiliation from the search.) You could contribute to this project by finding a way to restructure the code to work around that limitation.
 
 This script works with the E-Utilities [eSummary](https://www.ncbi.nlm.nih.gov/books/NBK25499/#_chapter4_ESummary_) data, which is sometimes incomplete or missing. You could restructure this code to work with the E-Utilities [eFetch](https://www.ncbi.nlm.nih.gov/books/NBK25499/#_chapter4_EFetch_) data, which is more robust (it includes abstracts, for example).
