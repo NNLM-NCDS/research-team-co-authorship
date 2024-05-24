@@ -72,6 +72,13 @@ The NNLM National Center for Data Services held a class, the Fundamentals of Hea
  
 **Additional thanks to:** Joshua Kearney (for the Boolean structure), Angeleen Neely-Sardon, David Farris, Linda Hartman, Lisa Connor, Mego Franks, Ahlam Saleh, Breck Turner, Kathryn Mlsna, and Doug Dechow
 
+# Contact
+For questions or suggestions about this code, please contact:
+
+Justin de la Cruz, justin.delacruz@nyulangone.org
+
+Brett Porter, bxp040@shsu.edu
+
 # How to Contribute to the Project
 You could create and share a version of this script that doesn't require Google Colab (so folks can run it locally on their computers), and accompanying documentation.
 
