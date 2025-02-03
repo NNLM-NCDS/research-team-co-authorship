@@ -1,0 +1,33 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: research-team-co-authorship
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Justin
+    family-names: de la Cruz
+    email: justin.delacruz@nyulangone.org
+    affiliation: NNLM National Center for Data Services
+    orcid: 'https://orcid.org/0000-0002-8506-7217'
+  - given-names: Brett
+    family-names: Porter
+    email: bxp040@shsu.edu
+  - given-names: Beth
+    family-names: Blackwood
+  - given-names: Cheryl
+    family-names: Thompson
+repository-code: 'https://github.com/NNLM-NCDS/research-team-co-authorship'
+abstract: >-
+  This Python script searches PubMed for co-authored
+  articles and fetches those citations via the Entrez
+  Programming Utilities (E-Utilities) API provided by
+  National Library of Medicine.
+keywords:
+  - python
+  - pubmed
+license: MIT
+date-released: '2024-05-24'
